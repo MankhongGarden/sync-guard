@@ -1,0 +1,8 @@
+{
+  "intervalSec": 20,
+  "kill": ["iCloudPhotos", "ApplePhotoStreams"],
+  "throttle": [
+    { "procs": ["GoogleDriveFS"], "affinity": "0x3", "priority": "Idle" },
+    { "procs": ["OneDrive", "OneDrive.Sync.Service"], "affinity": "0x7", "priority": "BelowNormal" }
+  ]
+}
